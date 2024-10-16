@@ -4,8 +4,11 @@ import cors from 'cors'
 import jobpost from './routes/jobPost'
 import authroutes from './routes/authroutes'
 import dotenv from 'dotenv'
+import connectdb from './dbconnect';
 
 dotenv.config();
+
+connectdb();
 
 app.use(express.json());
 app.use(cors());
