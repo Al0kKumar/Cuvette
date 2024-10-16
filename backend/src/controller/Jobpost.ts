@@ -1,7 +1,6 @@
 import {z} from 'zod'
 import express, { Request, Response } from 'express'
 import JobPost from '../dbmodels/jobpost';
-import auth from '../middleware/auth';
 
 const jobpostSchema = z.object({
   Title: z.string(),
